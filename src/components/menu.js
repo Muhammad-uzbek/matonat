@@ -31,7 +31,6 @@ const StyledHamburgerButton = styled.button`
     transition-duration: 0.15s;
     transition-property: opacity, filter;
   }
-
   .ham-box {
     display: inline-block;
     position: relative;
@@ -246,7 +245,8 @@ const Menu = () => {
           onClick={toggleMenu}
           menuOpen={menuOpen}
           ref={buttonRef}
-          aria-label="Menu">
+          aria-label="Menu"
+        >
           <div className="ham-box">
             <div className="ham-box-inner" />
           </div>

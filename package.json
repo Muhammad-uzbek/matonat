@@ -5,7 +5,7 @@
   "author": "Brittany Chiang <brittany.chiang@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/Muhammad-uzbek/matonat"
   },
   "keywords": [
     "gatsby"
@@ -13,11 +13,11 @@
   "license": "MIT",
   "browserslist": "> 0.25%, not dead",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "npx gatsby build",
+    "develop": "npx gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "npx gatsby serve",
     "clean": "gatsby clean",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
@@ -32,8 +32,11 @@
   },
   "dependencies": {
     "animejs": "^3.1.0",
+    "anser": "^2.1.1",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^3.4.1",
+    "gatsby-legacy-polyfills": "^2.20.0",
+    "gatsby-link": "^4.20.0",
     "gatsby-plugin-google-analytics": "^3.4.0",
     "gatsby-plugin-image": "^1.4.0",
     "gatsby-plugin-manifest": "^3.4.0",
@@ -44,6 +47,7 @@
     "gatsby-plugin-sharp": "^3.4.1",
     "gatsby-plugin-sitemap": "^4.0.0",
     "gatsby-plugin-styled-components": "^4.4.0",
+    "gatsby-react-router-scroll": "^5.20.0",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^5.1.0",
     "gatsby-remark-prismjs": "^5.1.0",

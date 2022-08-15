@@ -1,14 +1,13 @@
 module.exports = {
   email: 'brittany.chiang@gmail.com',
-
   socialMedia: [
     {
-      name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      name: 'Youtube',
+      url: 'https://youtube.com/channel/UCpZhbARXINl-L7Y6fP0yndQ',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://instagram.com/zinapoyamedia',
     },
     {
       name: 'Twitter',
@@ -26,7 +25,7 @@ module.exports = {
 
   navLinks: [
     {
-      name: 'About',
+      name: 'Biz haqimizda',
       url: '/#about',
     },
     {
@@ -34,11 +33,11 @@ module.exports = {
       url: '/#jobs',
     },
     {
-      name: 'Work',
+      name: 'Blog',
       url: '/#projects',
     },
     {
-      name: 'Contact',
+      name: 'Bog`lanish',
       url: '/#contact',
     },
   ],
