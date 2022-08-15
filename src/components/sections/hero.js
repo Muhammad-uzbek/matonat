@@ -57,19 +57,17 @@ const Hero = () => {
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
   }, []);
-
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const two = <h2 className="big-heading">Matonat Media</h2>;
+  const three = <h3 className="big-heading">Lorem ipsum dolar sity</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
         <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
+          Matonat Media
+        </a>{' '}
+        jamoasining maqsadlari:
+Azim yo‘llarda qalblari xasta ko‘ngil egalariga dilkash bo‘lish! 
+Zinama-zina ko‘tarilar ekanmiz, Yagona Allohni suyanch bilib, qalbingiz sakinat, bolalarcha beg‘ubor kulgi ila to‘lishida o‘z hissamizni qo‘shish!
         .
       </p>
     </>
@@ -80,11 +78,11 @@ const Hero = () => {
       href="https://www.newline.co/courses/build-a-spotify-connected-app"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Batafsil
     </a>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [two, three, four, five];
 
   return (
     <StyledHeroSection>
