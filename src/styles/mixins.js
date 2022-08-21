@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 
 const button = css`
   color: var(--green);
-  background-color: transparent;
+  background-color: #pf0582f;
   border: 1px solid var(--green);
   border-radius: var(--border-radius);
   font-size: var(--fz-xs);
