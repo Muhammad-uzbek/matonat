@@ -65,7 +65,7 @@ const Contact = () => {
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
+        So'rovnomada qatnashish
       </a>
     </StyledContactSection>
   );
