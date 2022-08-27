@@ -1,54 +1,21 @@
 ---
-title: Accessible Clickable Cards
-description: Clickable cards with multiple child links
-date: 2021-04-21
+title: Xayolga yomon fikrlar kelganida nima qilish kerak?
+description: Inson tushkunlikka tushganida xayoliga yomon fikrlar keladi.
+date: 2022-08-26
 draft: false
-slug: /pensieve/clickable-cards
+slug: /blog/hayolga-yomon-fikrlar
 tags:
-  - Accessibility
-  - CSS
+  - Xayol
+  - Duo
+  - Najot
 ---
 
-[Codepen Demo](https://codepen.io/bchiang7/pen/xxRBvgd?editors=1100)
-
-Card layout where the card itself isn't an anchor link, but the whole card is clickable (with a `:before` pseudo element on the main `<a>`). Links inside of the card are still clickable.
-
-## CSS
-
-```css
-.grid__item {
-  &:hover,
-  &:focus-within {
-    background-color: #eee;
-  }
-
-  a {
-    position: relative;
-    z-index: 1;
-  }
-
-  h2 {
-    a {
-      position: static;
-
-      &:hover,
-      &:focus {
-        color: blue;
-      }
-
-      &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 0;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        transition: background-color 0.1s ease-out;
-        background-color: transparent;
-      }
-    }
-  }
-}
-```
+Alloh taolodan shayton vasvasasidan panoh tilash. Inson tushkunlikka tushganida xayoliga yomon fikrlar keladi. Bunday o‘ylardan xalos bo‘lish uchun “A’uzu billahi min ash-shaytonir rojim”, deb qayta-qayta takrorlab, Allohdan shayton vasvasasidan panoh tilash kerak. Shuningdek, “Au’zu bikalimati-l-lahi-t-tammati min kulli shaytonin va haammah va min kulli ’aynin laammah” (Har bir shaytondan, hashoratdan va kasal qiluvchi ko‘zdan Allohning mukammal kalimalari bilan panoh tilayman) duosini o‘qish lozimdir.
+Qur’on o‘qish yoki tinglash. Qur’on g‘am-tashvish, tushkunlik, xavotir, shubha, gumon, g‘azab, siqilish kabi kasalliklarga shifo, zulmatda nur, qayg‘u va mahzunlikni ketkazuvchi mayoq, qalbga oromdir. Bu haqida Qur’oni karimda shunday deyiladi: “Biz Qur’onni mo‘minlar uchun shifo va rahmat o‘laroq nozil qilurmiz” (Isro surasi, 82-oyat), “Ey, odamlar! Sizlarga Rabbingizdan va’z (nasihat), dillardagi (illatlar)ga shifo va mo‘minlarga hidoyat va rahmat keldi” (Yunus surasi, 57-oyat). Inson Qur’on o‘qiganida yoki tinglaganida qalbi taskin topadi, xotirjam bo‘ladi, xayoliga kelgan yomon o‘y-fikrlar tark etadi.
+Tahorat olish. Suvning odamni tinchlantiradigan xususiyati bor. Shuning uchun, tahorat olgan kishi yengil tortadi.
+Yengil ish bilan chalg‘ish. Idish yuvish yoki xonani tartiblash kabi yengil ishlar bilan mashg‘ul bo‘lish ham yomon xayollardan chalg‘ishga yordam beradi.
+Ochiq havoda sayr qilish. Toza havo va quyosh nurlari nafaqat inson tanasi uchun balki uning ruhiyatiga ham foydalidir. Shuning uchun, ochiq havoda sayr qilish inson kayfiyatini ko‘tarib, ijobiy fikrlar paydo bo‘lishiga sabab bo‘ladi.
+Sport bilan shug‘ullanish. Kamharakatlilik kishida pessimistik kayfiyat paydo bo‘lib, salbiy fikrlar yuzaga kelishiga olib keladi. Sport bilan shug‘ullanish esa inson tanasida qon aylanish tizimini yaxshilab, kishi ruhiyatiga ijobiy ta’sir qiladi.
+Film tomosha qilish. Kayfiyatni ko‘taradigan, komediya kino tomosha qilish yomon fikrlardan chalg‘ishga yordam beradi.
+Suhbatlashish. Inson tushkunlikda yoki og‘ir musibatga duch kelganida hissiyotlarga berilib, yuzaga kelgan vaziyatni to‘g‘ri baholay olmaydi, muammodan chiqish yo‘lini ko‘rmaydi. Shuning uchun, dilga yaqin kishi bilan suhbatlashish noxush holatdan chiqishga yordam beradi. O‘zingiz ishongan, qalbingizga yaqin insonga sizni qiynayotgan muammoni ayting. Agar atrofingizdagi insonlarga ayta olmasangiz ruhshunos mutaxassisga murojaat qiling. Yurtimizda maktab, kollej hamda psixologik markazlarda mutaxassislar xizmati joriy qilingan.
+“O‘zingizni halokatga tashlamang” kitobidan

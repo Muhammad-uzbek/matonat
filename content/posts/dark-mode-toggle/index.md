@@ -1,99 +1,18 @@
 ---
-title: Dark Mode Toggle
-description: Dark mode without the flash of default theme
-date: 2021-04-21
+title: Og‘ir dardning ajri bor!
+description: Inson hayoti davomida turli sinovlarga duch keladi.
+date: 2022-08-25
 draft: false
-slug: /pensieve/dark-mode-toggle
+slug: /blog/ogir-dard
 tags:
-  - Theming
-  - Dark Mode
+  - Qiyinchilik
+  - Ajr
+  - Dard
 ---
 
-Dark mode toggle without the flash of default theme. Important bits:
+Inson hayoti davomida turli sinovlarga duch keladi. Oilasida, turmushida, ishida qiyinchilik yuzaga kelishi yoki og‘ir dardga chalinishi ham mumkin. Lekin eng og‘ir musibatlar ham, qattiq kasalliklar ham o‘z joniga qasd qilishni oqlamaydi. Musulmon kishi bu kabi musibatlarni Allohdan najot so‘rab, sabru matonat va mustahkam iroda bilan yengib o‘tadi. Bu xususida Rasululloh (sollallohu alayhi vasallam): “Musulmonga qay bir musibat: charchashmi, bemorlikmi, tashvishmi, xafachilikmi, ozormi, g‘am-g‘ussami, xattoki tikan kirishimi yetadigan bo‘lsa, albatta, Alloh ular ila uning xatolarini kafforat qilur”, dedilar. Boshqa bir hadisi sharifda: “Sabr – imonning yarmidir”, deyiladi.
+Rivoyat qilinishicha, mashhur sahobiy Imron ibn Husayn (raziyallohu anhu) og‘ir dardga chalinib, yotib qoldilar. Shu dard bilan o‘ttiz yil azoblandilar, lekin biror marta noshukrlik qilmadilar. Allohning sinovi deb qabul qilib, chiroyli sabr qildilar. U zot doim: “Allohga mahbub bo‘lgan narsa men uchun eng sevimlisidir”, der edilar. Kunlarning birida ziyoratlariga kelgan bir kishi holatlarini ko‘rib yig‘ladi. Shunda Imron ibn Husayn (raziyallohu anhu) u kishiga: “Senga bir sirni aytaman, bu narsani men hayot ekanman biror kishiga aytmagin. Bu kasallikka sabr qilishim evaziga Alloh taolo menga bir xislat berdiki, farishtalar yonimga kelishadi va men ular bilan suhbatlashib o‘tiraman”, dedilar.
+Demak, inson kasal bo‘lsa yoki biror og‘ir dardga chalinsa Alloh tomonidan berilgan sinov deb sabrli bo‘lishi, yaxshilikka umid qilishi bilan katta ajr-savoblarga erishadi. Lekin og‘riqlarga chiday olmay, sabrsizlik qilib, Alloh bergan hayot ne’matiga qasd qilgan kishi abadiy azobga o‘zini giriftor qiladi. Bu haqida Rasululloh (sollallohu alayhi vasallam) dedilar: «Bir kishining jarohati bor edi. Sabrsizlik qilib, pichoq oldi-da, qo‘l (tomir)ini kesdi va ko‘p o‘tmay, qon yo‘qotib, vafot etdi. Shunda Alloh: “Bandam o‘zini-o‘zi o‘ldirib, Mening unga bergan umrimga shukr qilmay, shoshildi. Shuning uchun unga jannatni abadiy harom qildim”, dedi». Yana bir hadisi sharifda shunday rivoyat qilinadi: “Bir kishi jarohatining og‘irig‘iga chidolmay, o‘limini tezlatib, qilichining tig‘i bilan o‘zini o‘ldirdi. Payg‘ambar (sollallohu alayhi vasallam) u haqida: “U do‘zax ahlidandir”, dedilar”.
+Xulosa qilganda, inson hayotida o‘zi kutmagan musibatga duch kelganida yoki kasal bo‘lganida sabr qilishi orqali katta ajrga erishadi. Bunday holatda tushkunlikka tushmasdan, yaxshilikni umid qilishi kerak. Allohdan tuzalishini so‘rab, dardiga shifo izlashi lozim. Zero, o‘limdan boshqa har bir dardga davo bor.
 
-- CSS variables for color theming
-- Put `data-theme` attribute on `<html>`, not `<body>`, so we can run the JS before the DOM finishes rendering
-- Run local storage check in the `<head>`
-- JS for toggle button click handler can come after render
-
-## HTML
-
-```html
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    ...
-    <script>
-      // If there's a theme stored in localStorage, use it on the <html>
-      const localStorageTheme = localStorage.getItem('theme');
-      if (localStorageTheme) {
-        document.documentElement.setAttribute('data-theme', localStorageTheme);
-      }
-    </script>
-  </head>
-  <body>
-    <div class="theme-toggle">
-      <button
-        class="theme-toggle-btn js-theme-toggle"
-        aria-label="Activate dark mode"
-        title="Activate dark mode"
-      >
-        <!--
-        <svg class="light-mode">
-          <use xlink:href="#sun"></use>
-        </svg>
-        <svg class="dark-mode">
-          <use xlink:href="#moon"></use>
-        </svg>
-        -->
-      </button>
-    </div>
-
-    <script src="app.js"></script>
-  </body>
-</html>
-```
-
-## CSS Variables
-
-```css
-:root {
-  --bg: #ffffff;
-  --text: #000000;
-}
-
-[data-theme='dark'] {
-  --bg: #000000;
-  --text: #ffffff;
-}
-```
-
-## JavaScript
-
-```js:title=app.js
-const themeToggleBtn = document.querySelector('.js-theme-toggle');
-
-themeToggleBtn.addEventListener('click', () => onToggleClick());
-
-const onToggleClick = () => {
-  const { theme } = document.documentElement.dataset;
-  const themeTo = theme && theme === 'light' ? 'dark' : 'light';
-  const label = `Activate ${theme} mode`;
-
-  document.documentElement.setAttribute('data-theme', themeTo);
-  localStorage.setItem('theme', themeTo);
-
-  themeToggleBtn.setAttribute('aria-label', label);
-  themeToggleBtn.setAttribute('title', label);
-};
-```
-
-## Resources
-
-- <https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/>
-- <https://css-tricks.com/flash-of-inaccurate-color-theme-fart/>
-- <https://mxb.dev/blog/color-theme-switcher/>
-- <https://www.joshwcomeau.com/react/dark-mode/>
-- <https://web.dev/prefers-color-scheme/>
+“O‘zingizni halokatga tashlamang” kitobidan

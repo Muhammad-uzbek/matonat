@@ -1,15 +1,13 @@
 ---
 date: '2'
-title: 'Spotify Profile'
+title: 'O‘ZINGIZNI HALOKATGA TASHLAMANG!'
 cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
-external: 'https://spotify-profile.herokuapp.com/'
+external: '/posts/halkatga-tashlamang'
 tech:
-  - React
-  - Styled Components
-  - Express
-  - Spotify API
-  - Heroku
+  - halokat
+  - aql
+  - fazilat
 ---
 
-A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+Inson – bu dunyoning azizu mukarram xilqati, mavjudotlar ichida sarvaridir. Alloh taolo Qur’oni karimda insonning sha’nini bayon qilib: “Biz odamzotni azizu mukarram qilib yaratdik hamda ularni suvda ham, quruqlikda ham yuradigan qilib qo‘ydik. Ularga halol-pok narsalardan rizq ato etib, ularni boshqa hamma maxluqotdan afzal etdik”,- deb marhamat qilgan (Al-Isro surasi, 70-oyat).
+Alloh taolo insonni O‘zining yer yuzidagi xalifasi, borliqdagi mavjudotlarning eng afzali qilib yaratdi. Shuningdek, Alloh odamga aql berib, uni mukarram qildi. Aqli bilan inson boshqa maxluqotlardan ustun turadi.
