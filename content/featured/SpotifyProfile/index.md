@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'O‘ZINGIZNI HALOKATGA TASHLAMANG!'
-cover: './demo.png'
+cover: './mosq.jpg'
 external: '/posts/halkatga-tashlamang'
 tech:
   - halokat

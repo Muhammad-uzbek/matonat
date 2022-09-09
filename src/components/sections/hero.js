@@ -58,7 +58,7 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
   const two = <h2 className="big-heading">Matonat Media</h2>;
-  const three = <h3 className="big-heading">Lorem ipsum dolar sity</h3>;
+  const three = <h3 className="big-heading">O‘zingizni halokatga tashlamang!</h3>;
   const four = (
     <>
       <p>
@@ -74,11 +74,11 @@ const Hero = () => {
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="https://www.youtube.com/channel/UCpZhbARXINl-L7Y6fP0yndQses/build-a-spotify-connected-app"
       target="_blank"
       rel="noreferrer"
     >
-      Batafsil
+      Youtube sahifamiz
     </a>
   );
 

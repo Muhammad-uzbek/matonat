@@ -38,7 +38,9 @@ const StyledLinkWrapper = styled.div`
 const Email = ({ isHome }) => (
   <Side isHome={isHome} orientation="right">
     <StyledLinkWrapper>
-      <a href={`mailto:${email}`}>{email}</a>
+      <a href={`${email}`} target="_blank" rel="noreferrer">
+        Botga yozish
+      </a>
     </StyledLinkWrapper>
   </Side>
 );

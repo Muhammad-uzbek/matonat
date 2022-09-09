@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'yourmail@gmail.com',
+  email: 'https://t.me/matonat_uzbot',
   socialMedia: [
     {
       name: 'Youtube',
@@ -16,10 +16,6 @@ module.exports = {
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
     },
   ],
 

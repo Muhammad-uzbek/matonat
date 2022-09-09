@@ -266,8 +266,8 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href="/resume.pdf" className="resume-link">
-              So'rovnoma
+            <a href="https://t.me/matonat_uzbot" target="_blank" className="resume-link" rel="noreferrer">
+              murojaat qilish
             </a>
           </nav>
         </StyledSidebar>

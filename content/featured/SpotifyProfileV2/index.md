@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'Xayolga yomon fikrlar kelganida nima qilish kerak?'
-cover: './course-card.png'
+cover: './hayol.jpg'
 external: '/blog/hayolga-yomon-fikrlar'
 tech:
   - Xayol

@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'Og‘ir dardning ajri bor!'
-cover: './halcyon.png'
+cover: './masjid.jpg'
 external: '/blog/ogir-dard'
 tech:
   - Qiyinchilik

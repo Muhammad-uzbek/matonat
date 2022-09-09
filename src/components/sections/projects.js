@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
@@ -27,7 +27,7 @@ const StyledProjectsSection = styled.section`
   .projects-grid {
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: auto auto;
     grid-gap: 15px;
     position: relative;
     margin-top: 50px;
@@ -134,7 +134,10 @@ const StyledProject = styled.li`
       }
     }
   }
-
+  .project-item {
+    width: 30%;
+    height: 350px;
+  }
   .project-description {
     color: var(--light-slate);
     font-size: 17px;
@@ -190,12 +193,17 @@ const Projects = () => {
     }
   `);
 
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
   const revealTitle = useRef(null);
   const revealArchiveLink = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
-
+  const youtubeLink = [
+    'https://www.youtube.com/embed/WAD-o6f9dW0',
+    'https://www.youtube.com/embed/UCQEmmQdY98',
+    'https://www.youtube.com/embed/_BrDycpxxZw',
+    'https://www.youtube.com/embed/1rLqkBuEQXs',
+  ];
   useEffect(() => {
     if (prefersReducedMotion) {
       return;
@@ -209,7 +217,7 @@ const Projects = () => {
   const GRID_LIMIT = 6;
   const projects = data.projects.edges.filter(({ node }) => node);
   const firstSix = projects.slice(0, GRID_LIMIT);
-  const projectsToShow = showMore ? projects : firstSix;
+  const projectsToShow = GRID_LIMIT > 4 ? projects : firstSix;
 
   const projectInner = node => {
     const { frontmatter, html } = node;
@@ -234,7 +242,8 @@ const Projects = () => {
                   aria-label="External Link"
                   className="external"
                   target="_blank"
-                  rel="noreferrer">
+                  rel="noreferrer"
+                >
                   <Icon name="External" />
                 </a>
               )}
@@ -265,10 +274,15 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
+      <h2 ref={revealTitle}>Yotubedagi loyihamizdan bahramand bo'ling</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
+      <Link
+        className="inline-link archive-link"
+        to="https://www.youtube.com/channel/UCpZhbARXINl-L7Y6fP0yndQ"
+        target="_blank"
+        ref={revealArchiveLink}
+      >
+        Youtubega o'tish
       </Link>
 
       <ul className="projects-grid">
@@ -281,30 +295,26 @@ const Projects = () => {
           </>
         ) : (
           <TransitionGroup component={null}>
-            {projectsToShow &&
-              projectsToShow.map(({ node }, i) => (
-                <CSSTransition
+            {youtubeLink &&
+              youtubeLink.map((item, i) => (
+                <iframe
+                  width="350"
+                  height="250"
+                  src={item}
                   key={i}
-                  classNames="fadeup"
-                  timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
-                  exit={false}>
-                  <StyledProject
-                    key={i}
-                    ref={el => (revealProjects.current[i] = el)}
-                    style={{
-                      transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
-                    }}>
-                    {projectInner(node)}
-                  </StyledProject>
-                </CSSTransition>
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               ))}
           </TransitionGroup>
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
+      {/* <button className="more-button" onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
-      </button>
+      </button> */}
     </StyledProjectsSection>
   );
 };
