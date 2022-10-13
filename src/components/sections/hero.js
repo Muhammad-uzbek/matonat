@@ -74,7 +74,7 @@ const Hero = () => {
   const five = (
     <a
       className="email-link"
-      href="https://www.youtube.com/channel/UCpZhbARXINl-L7Y6fP0yndQses/build-a-spotify-connected-app"
+      href="https://www.youtube.com/channel/UCpZhbARXINl-L7Y6fP0yndQ"
       target="_blank"
       rel="noreferrer"
     >

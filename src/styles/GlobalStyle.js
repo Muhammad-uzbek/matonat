@@ -234,6 +234,24 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     vertical-align: middle;
   }
+  .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
 
   
   svg {

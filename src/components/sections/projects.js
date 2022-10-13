@@ -139,7 +139,8 @@ const StyledProject = styled.li`
     height: 350px;
   }
   .project-description {
-    color: var(--light-slate);
+    // color: var(--light-slate);
+    color: #0059cd;
     font-size: 17px;
 
     a {

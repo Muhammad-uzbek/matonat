@@ -132,7 +132,7 @@ const StyledProject = styled.li`
     }
 
     @media (max-width: 768px) {
-      color: var(--white);
+      color: var(--lightest-slate);
 
       a {
         position: static;
@@ -158,7 +158,7 @@ const StyledProject = styled.li`
     padding: 25px;
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
-    color: var(--light-slate);
+    color: var(--lightest-slate);
     font-size: var(--fz-lg);
 
     @media (max-width: 768px) {
@@ -283,8 +283,7 @@ const StyledProject = styled.li`
         bottom: 0;
         z-index: 3;
         transition: var(--transition);
-        background-color: var(--navy);
-        mix-blend-mode: screen;
+        background-color: #f5ffff75;
       }
     }
 

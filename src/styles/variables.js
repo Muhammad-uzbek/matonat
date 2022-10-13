@@ -1,21 +1,21 @@
 import { css } from 'styled-components';
-
+// #1761d114
 const variables = css`
   :root {
-    --dark-navy: #020c1b;
-    --navy: #162780;
-    --light-navy: #213abf;
+    --dark-navy: #f5ffff;
+    --navy: #f5ffff;
+    --light-navy: #0059cd;
     --lightest-navy: #233554;
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --dark-slate: #495670;
-    --slate: #74caf9;
-    --light-slate: #74caf9;
-    --lightest-slate: #c4eaff;
+    --slate: #0059cd;
+    --light-slate: #6dd7fe;
+    --lightest-slate: #0059cd;
     --white: #e6f1ff;
-    --green: #64ffda;
+    --green: #0059cd;
     --green-tint: rgba(100, 255, 218, 0.1);
     --pink: #f57dff;
-    --blue: #57cbff;
+    --blue: #3ea6ff42;
 
     --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
       sans-serif;
