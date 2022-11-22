@@ -86,7 +86,9 @@ const Loader = ({ finishLoading }) => {
       <Helmet bodyAttributes={{ class: `hidden` }} />
 
       <div className="logo-wrapper">
-        <IconLoader />
+        <h2>
+          Matonat.uz
+        </h2>
       </div>
     </StyledLoader>
   );
